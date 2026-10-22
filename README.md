@@ -7,13 +7,6 @@
 | Muhammad Pramudya Aldiansyah | 25523082 |
 | Danis Setiyawan | 25523072 |
 
-## Struktur Repositori
-├── README.md
-├── A_linear_regression.ipynb
-├── B_logistic_regression.ipynb
-└── data/
-    └── titanic.csv   (dataset B; dataset A berukuran besar, lihat tautan di bawah)
-
 ## Sumber Dataset
 | Bagian | Dataset | Sumber |
 |---|---|---|
@@ -27,14 +20,14 @@ Untuk menjalankan Bagian A, unduh `Coffee Shop Sales.xlsx` dari tautan Kaggle la
 **Fitur kandidat:** `unit_price`, `hour`, `is_weekend`, `month`, `store_location` (one-hot), `product_category` (one-hot). `transaction_qty` dikeluarkan karena merupakan komponen target (data leakage); kolom ID, `product_type`, dan `product_detail` tidak dipakai.
 **Alur:** statistik deskriptif dan 4 visualisasi (A2) → cek missing/duplikat, outlier (IQR, dipertahankan karena produk mahal itu valid), one-hot encoding (A3) → seleksi fitur dengan korelasi, uji F, dan VIF (A4) → split 80:20 `random_state=42`, scaling dengan `StandardScaler` yang di-fit pada data latih saja (A5) → `LinearRegression` (A6) → MAE, MSE, RMSE, R² latih vs uji, plot aktual vs prediksi, residual (A7) → analisis performa (A8).
 
-**Hasil:** *(isi dari sel terakhir notebook A setelah dijalankan: tabel metrik latih/uji dan kesimpulan overfitting/underfitting)*
+**Hasil:** 
 
 | Metrik | Latih | Uji |
 |---|---|---|
-| MAE | | |
-| MSE | | |
-| RMSE | | |
-| R² | | |
+| MAE | 1.3803 | 1.3520 |
+| MSE | 10.4070 | 2.6776 |
+| RMSE | 3.2260 | 1.6363 |
+| R² | 0.4809 | 0.7071 |
 
 **Keterbatasan:** hubungan linear saja; target condong ke kanan dan outlier produk mahal menarik garis regresi; residual tidak berdistribusi normal dan variansnya tidak konstan; tidak ada data pelanggan/promo; hanya 6 bulan dan 3 toko; prediksi bisa bernilai negatif.
 
@@ -64,9 +57,9 @@ Confusion matrix [[TN, FP], [FN, TP]] = [[83, 27], [19, 50]]. Accuracy latih 0,7
 
 | Anggota | Kontribusi |
 |---|---|
-| Ahmad Azzuri Pakalessy | *(isi)* |
-| Muhammad Pramudya Aldiansyah | *(isi)* |
-| Danis Setiyawan | *(isi)* |
+| Ahmad Azzuri Pakalessy | Mencari Dataset dan mengerjakan A.1 sampai A.5 |
+| Muhammad Pramudya Aldiansyah | Mengerjakan B.4 - B.8 |
+| Danis Setiyawan | Membuat repo & mengerjakan A.6 - A.8 |
 
 ## Cara Menjalankan
 
