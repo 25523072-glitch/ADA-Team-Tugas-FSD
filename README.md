@@ -59,7 +59,7 @@ Confusion matrix [[TN, FP], [FN, TP]] = [[83, 27], [19, 50]]. Accuracy latih 0,7
 |---|---|
 | Ahmad Azzuri Pakalessy | Mencari Dataset dan mengerjakan A.1 sampai A.5 |
 | Muhammad Pramudya Aldiansyah | Mengerjakan B.4 - B.8 |
-| Danis Setiyawan | Membuat repo & mengerjakan A.6 - A.8 |
+| Danis Setiyawan | Membuat repo & readme & mengerjakan A.6 - A.8 |
 
 ## Cara Menjalankan
 
